@@ -1,8 +1,9 @@
 :root {
-  --orange: #EA6826;
   --borderWidth: 6rem;
-  --navBarTextColor: #fff;
   --heroSectionImage: 413px;
+  /* COLORS */
+  --orange: #EA6826;
+  --navBarTextColor: #fff;
   --backgroundColorForTexts: #fff;
 }
 
@@ -12,11 +13,8 @@ html {
   overflow-y: scroll;
 }
 
-@media only screen and (max-width: 1280px) {
-  :root {
-    font-size: 5px;
-    --borderWidth: 0rem;
-  }
+h1,h2,h3 {
+  word-wrap: break-word;
 }
 
 @font-face {
@@ -137,7 +135,7 @@ section {
   padding: 0px 0.2vw;
 }
 #hero .hero-wrapper .column1 .signature {
-  font-size: 5vw;
+  font-size: var(--signatureFontSize);
 }
 #hero .hero-wrapper .column1 .big,
 #hero .hero-wrapper .column1 .small {
@@ -145,10 +143,10 @@ section {
 }
 #hero .hero-wrapper .column1 .big.underlined {
   text-decoration: underline;
-  font-size: 7vw;
+  font-size: var(--largeFontSize);
 }
 #hero .hero-wrapper .column1 .small {
-  font-size: 3vw;
+  font-size: var(--heroSmallFontSize);
   display: inline-block;
   margin-top: 10px;
 }
@@ -205,8 +203,10 @@ section {
 #design-process .design-process-wrapper .label-text {
   text-transform: capitalize;
   font-family: Gloria Hallelujah;
-  font-size: 1.7vw;
-  display: block;
+  font-size: var(--designProcessLabelFontSize);
+  white-space: pre-line;
+  line-height: 6rem;
+  text-align: center;
 }
 #design-process .design-process-wrapper .column1 .label:nth-child(1) .arrow img {
   position: absolute;
@@ -264,7 +264,7 @@ section {
 }
 #atomic-design .atomic-design-wrapper h2 {
   text-transform: uppercase;
-  font-size: 3vw;
+  font-size: var(--atomicDesignTitleFontSize);
   font-family: Gloria Hallelujah;
   width: 100%;
   text-align: center;
@@ -285,7 +285,12 @@ section {
   text-align: center;
   margin-top: 2vh;
   background-color: var(--backgroundColorForTexts);
-  font-size: 1.7vw;
+  font-size: var(--atomicDesignIconLabelFontSize);
+}
+#atomic-design .atomic-design-wrapper .column .nested-column1,
+#atomic-design .atomic-design-wrapper .column .nested-column2 {
+  display: flex;
+  justify-content: center;
 }
 #atomic-design .atomic-design-wrapper .column .level img {
   height: 15vw;
@@ -337,7 +342,7 @@ section {
 }
 #hire .hire-wrapper .column2 .hire-text h2 {
   text-transform: uppercase;
-  font-size: 7vw;
+  font-size: var(--largeFontSize);
   margin-bottom: 2vh;
 }
 #hire .hire-wrapper .column2 .hire-text img {
@@ -396,7 +401,7 @@ section {
 }
 #hire .hire-wrapper .column3 h3 {
   font-family: Arvo;
-  font-size: 1.8vw;
+  font-size: var(--hireMeDetailsFontSize);
 }
 #hire .hire-wrapper .column3 .resume {
   position: relative;
@@ -409,4 +414,238 @@ section {
   width: 10vw;
   right: -1vw;
   bottom: -1vw;
+}
+
+/*
+** MEDIA QUERIES **
+*/
+
+@media (max-width: 576px) {
+  /* HERO SECTION */
+  :root {
+    /* TEXTS */
+    --largeFontSize: 7rem;
+    --signatureFontSize: 7rem;
+    --heroSmallFontSize: 3rem;
+  }
+
+  /* DESIGN PROCESS SECTION */
+  :root {
+    --designProcessLabelFontSize: 3rem;
+  }
+  #design-process .design-process-wrapper {
+    display: grid;
+    grid-template-columns:1% 25% 48% 25% 1%;
+    padding-top: 10vh;
+  }
+  #design-process .design-process-wrapper .column2 > img {
+    margin-bottom: 15vh;
+    margin-top: 12vh;
+  }
+  #design-process .design-process-wrapper .column1,
+  #design-process .design-process-wrapper .column3 {
+    padding-top: 3vh;
+  }
+  #design-process .design-process-wrapper .column1 .label:nth-child(1),
+  #design-process .design-process-wrapper .column3 .label:nth-child(1) {
+    margin-bottom: 7vh !important;
+  }
+
+
+  /* ATOMIC DESIGN SECTION */
+  :root {
+    --atomicDesignTitleFontSize: 5rem;
+    --atomicDesignIconLabelFontSize: 3rem;
+  }
+  #atomic-design h3 {
+    position: absolute;
+    left: 0;
+    bottom: -4vh;
+  }
+  #atomic-design .atomic-design-wrapper .column .level {
+    width: 12vw;
+  }
+  #atomic-design .atomic-design-wrapper .column3 {
+    padding-top: 10vh;
+  }
+  #atomic-design .atomic-design-wrapper .column3 .column3-wrapper {
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+  /* HERO SECTION */
+  :root {
+    /* TEXTS */
+    --largeFontSize: 10rem;
+    --signatureFontSize: 7rem;
+    --heroSmallFontSize: 4rem;
+  }
+
+  /* DESIGN PROCESS SECTION */
+  :root {
+    --designProcessLabelFontSize: 4rem;
+  }
+  #design-process .design-process-wrapper {
+    display: grid;
+    grid-template-columns:1% 25% 48% 25% 1%;
+    padding-top: 10vh;
+  }
+  #design-process .design-process-wrapper .column2 > img {
+    margin-bottom: 18vh;
+    margin-top: 12vh;
+  }
+
+  /* ATOMIC DESIGN SECTION */
+  :root {
+    --atomicDesignTitleFontSize: 5.5rem;
+    --atomicDesignIconLabelFontSize: 2.5rem;
+  }
+  #atomic-design .atomic-design-wrapper .column .level {
+    width: 12vw;
+  }
+  #atomic-design .atomic-design-wrapper .column3 {
+    padding-top: 10vh;
+  }
+  #atomic-design .atomic-design-wrapper .column3 .column3-wrapper {
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* HERO SECTION */
+  :root {
+    /* TEXTS */
+    --largeFontSize: 15rem;
+    --signatureFontSize: 12rem;
+    --heroSmallFontSize: 6.4rem;
+  }
+
+  /* DESIGN PROCESS SECTION */
+  :root {
+    --designProcessLabelFontSize: 5rem;
+  }
+  #design-process .design-process-wrapper {
+    display: grid;
+    grid-template-columns:1% 25% 48% 25% 1%;
+    padding-top: 10vh;
+  }
+  #design-process .design-process-wrapper .column2 > img {
+    margin-bottom: 10vh;
+  }
+
+  /* ATOMIC DESIGN SECTION */
+  :root {
+    --atomicDesignTitleFontSize: 7.2rem;
+    --atomicDesignIconLabelFontSize: 3.6rem;
+  }
+  #atomic-design .atomic-design-wrapper .column .level {
+    width: 12vw;
+  }
+  #atomic-design .atomic-design-wrapper .column3 {
+    padding-top: 10vh;
+  }
+  #atomic-design .atomic-design-wrapper .column3 .column3-wrapper {
+    display: grid;
+    grid-template-columns: 50% 0% 50%;
+    height: 100%;
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+  /* HERO SECTION */
+  :root {
+    /* TEXTS */
+    --largeFontSize: 20rem;
+    --signatureFontSize: 12rem;
+    --heroSmallFontSize: 10rem;
+    --designProcessLabelFontSize: 7rem;
+    --atomicDesignTitleFontSize: 15rem;
+    --atomicDesignIconLabelFontSize: 8rem;
+    --hireMeDetailsFontSize: 7rem;
+  }
+
+  /* DESIGN PROCESS SECTION */
+  :root {
+    --designProcessLabelFontSize: 6rem;
+  }
+  #design-process .design-process-wrapper {
+    display: grid;
+    grid-template-columns:1% 29% 40% 29% 1%;
+    padding-top: 5vh;
+  }
+  #design-process .design-process-wrapper .column2 > img {
+    margin-bottom: 10vh;
+  }
+
+  /* ATOMIC DESIGN SECTION */
+  :root {
+    --atomicDesignTitleFontSize: 10rem;
+    --atomicDesignIconLabelFontSize: 4.3rem;
+  }
+  #atomic-design .atomic-design-wrapper .column .level {
+    width: 12vw;
+  }
+  #atomic-design .atomic-design-wrapper .column3 {
+    padding-top: 10vh;
+  }
+  #atomic-design .atomic-design-wrapper .column3 .column3-wrapper {
+    display: grid;
+    grid-template-columns: 50% 0% 50%;
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  :root {
+    --borderWidth: 6rem;
+    --heroSectionImage: 413px;
+    /* COLORS */
+    --orange: #EA6826;
+    --navBarTextColor: #fff;
+    --backgroundColorForTexts: #fff;
+    /* TEXTS */
+    --largeFontSize: 30rem;
+    --signatureFontSize: 18rem;
+    --heroSmallFontSize: 15rem;
+    --designProcessLabelFontSize: 7rem;
+    --atomicDesignTitleFontSize: 15rem;
+    --atomicDesignIconLabelFontSize: 8rem;
+    --hireMeDetailsFontSize: 7rem;
+  }
+  /* DESIGN PROCESS */
+  #design-process .design-process-wrapper .column2 > img {
+    margin-bottom: 20vh;
+  }
+  #hire .hire-wrapper .column2 .hire-text img {
+    position: absolute;
+    top: -3vh;
+    right: -1vw;
+    width: 7vw;
+  }
+  #design-process .design-process-wrapper .column2 > img {
+    margin-top: 0vh;
+  }
+
+  /* ATOMIC DESIGN SECTION */
+  :root {
+    --atomicDesignTitleFontSize: 14rem;
+    --atomicDesignIconLabelFontSize: 8rem;
+  }
+  #atomic-design .atomic-design-wrapper .column .level {
+    width: 12vw;
+  }
+  #atomic-design .atomic-design-wrapper .column3 {
+    padding-top: 3vh;
+  }
+  #atomic-design .atomic-design-wrapper .column3 .column3-wrapper {
+    display: grid;
+    grid-template-columns: 50% 0% 50%;
+    height: 100%;
+  }
 }
