@@ -132,6 +132,7 @@ section {
   height: calc(100vh - 2 * var(--borderWidth));
 }
 #hero .hero-wrapper .column1 {
+  padding-left: 4vw;
   padding-top: 12vh;
 }
 #hero .hero-wrapper .column1 span {
@@ -501,7 +502,7 @@ section {
     /* TEXTS */
     --largeFontSize: 10rem;
     --signatureFontSize: 7rem;
-    --heroSmallFontSize: 4rem;
+    --heroSmallFontSize: 4.5rem;
   }
 
   /* DESIGN PROCESS SECTION */
@@ -583,7 +584,7 @@ section {
     /* TEXTS */
     --largeFontSize: 20rem;
     --signatureFontSize: 12rem;
-    --heroSmallFontSize: 10rem;
+    --heroSmallFontSize: 8rem;
     --designProcessLabelFontSize: 7rem;
     --atomicDesignTitleFontSize: 15rem;
     --atomicDesignIconLabelFontSize: 8rem;
@@ -632,7 +633,7 @@ section {
     /* TEXTS */
     --largeFontSize: 30rem;
     --signatureFontSize: 18rem;
-    --heroSmallFontSize: 15rem;
+    --heroSmallFontSize: 12rem;
     --designProcessLabelFontSize: 7rem;
     --atomicDesignTitleFontSize: 15rem;
     --atomicDesignIconLabelFontSize: 8rem;
