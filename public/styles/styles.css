@@ -1,0 +1,42 @@
+@import "./pages/homepage.css";
+
+:root {
+  --borderWidth: 6rem;
+  --heroSectionImage: 413px;
+  /* COLORS */
+  --orange: #EA6826;
+  --navBarTextColor: #fff;
+  --backgroundColorForTexts: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+h1,h2,h3 {
+  word-wrap: break-word;
+}
+
+@font-face {
+  font-family: Primary;
+  src: url(../fonts/Primary.otf);
+  font-weight: black;
+}
+
+@font-face {
+  font-family: signature;
+  src: url(../fonts/Signature.otf);
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+}
+
+.signature {
+  font-family: signature;
+}
