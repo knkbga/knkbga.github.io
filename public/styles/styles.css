@@ -1,12 +1,14 @@
-@import "./pages/homepage.css";
-
 :root {
   --borderWidth: 6rem;
   --heroSectionImage: 413px;
   /* COLORS */
-  --orange: #EA6826;
+  --lightModeSurfaceBorder: #EA6826;
   --navBarTextColor: #fff;
   --backgroundColorForTexts: #fff;
+  --darkModeSurfaceBorderColor: #292929;
+  --darkModeSurfaceColor: #000;
+  --textColorLightMode: #000;
+  --textColorDarkMode: #eee;
 }
 
 html {

@@ -1,3 +1,7 @@
+h1,h2,h3 {
+  word-wrap: break-word;
+  color: var(--textColorLightMode);
+}
 
 #body {
   min-height: 100vh;
@@ -13,7 +17,7 @@
 .left-border, .right-border {
   width:  var(--borderWidth);
   position: fixed;
-  background-color: var(--orange);
+  background-color: var(--lightModeSurfaceBorder);
   height: 100vh;
   top: 0px;
 }
@@ -28,7 +32,7 @@
   z-index: 1;
   position: fixed;
   display: flex;
-  background-color: var(--orange);
+  background-color: var(--lightModeSurfaceBorder);
   width: 100vw;
   height: calc(2 * var(--borderWidth));
   left: 0px;
@@ -39,7 +43,7 @@
 #nav {
   top: 0px;
   padding-top: 3rem;
-  justify-content: left;
+  justify-content: space-between;
 }
 #nav .nav-separator {
   padding-top: 8px;
@@ -56,7 +60,7 @@
 }
 
 #nav, #footer {
-  background-color: var(--orange);
+  background-color: var(--lightModeSurfaceBorder);
 }
 #nav > a, #footer a {
   padding: 2rem 4rem;
@@ -586,10 +590,6 @@ section {
   :root {
     --borderWidth: 6rem;
     --heroSectionImage: 413px;
-    /* COLORS */
-    --orange: #EA6826;
-    --navBarTextColor: #fff;
-    --backgroundColorForTexts: #fff;
     /* TEXTS */
     --largeFontSize: 30rem;
     --signatureFontSize: 18rem;
