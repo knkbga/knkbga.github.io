@@ -14,9 +14,8 @@ h1,h2,h3 {
   padding-right: var(--borderWidth);
   background-color: var(--darkModeSurfaceColor);
 }
-
-* {
-  color: var(--textColorDarkMode);
+#nav, #footer {
+  background-color: var(--darkModeSurfaceBorderColor);
 }
 
 .left-border, .right-border {
@@ -31,48 +30,6 @@ h1,h2,h3 {
 }
 .right-border {
   right: 0px;
-}
-
-#nav, #footer {
-  z-index: 1;
-  position: fixed;
-  display: flex;
-  background-color: var(--darkModeSurfaceBorderColor);
-  width: 100vw;
-  height: calc(2 * var(--borderWidth));
-  left: 0px;
-  padding-left: var(--borderWidth);
-  padding-right: var(--borderWidth);
-}
-
-#nav {
-  top: 0px;
-  padding-top: 3rem;
-  justify-content: space-between;
-}
-#nav .nav-separator {
-  padding-top: 8px;
-  color: var(--navBarTextColor);
-}
-
-#footer {
-  justify-content: right;
-  padding-right: var(--borderWidth);
-  bottom: 0;
-}
-#footer img {
-  width: 24px;
-}
-
-#nav, #footer {
-  background-color: var(--darkModeSurfaceBorderColor);
-}
-#nav > a, #footer a {
-  padding: 2rem 4rem;
-  text-transform: capitalize;
-  color: var(--navBarTextColor);
-  display: inline-block;
-  font-family: Arvo;
 }
 
 /* All Sections */
@@ -240,18 +197,6 @@ section {
     --heroSmallFontSize: 3.2rem;
   }
 
-  #nav {
-    top: 0px;
-    padding-top:2px;
-    justify-content: left;
-  }
-  #nav > a, #footer a {
-    padding: 0rem 4rem;
-  }
-  #nav .nav-separator {
-    padding-top: 0px;
-    color: var(--navBarTextColor);
-  }
   #footer img {
     padding-top: 3px;
     width: 20px;
@@ -273,31 +218,17 @@ section {
     --signatureFontSize: 7rem;
     --heroSmallFontSize: 3.7rem;
   }
+  #hero .hero-wrapper .column2 h1{
+    right: var(--borderWidth);
+  }
 
-  #nav {
-    top: 0px;
-    padding-top:2px;
-    justify-content: left;
-  }
-  #nav > a, #footer a {
-    padding: 0rem 4rem;
-  }
-  #nav .nav-separator {
-    padding-top: 10px;
-    color: var(--navBarTextColor);
-  }
+  /* FOOTER */
   #footer img {
     padding-top: 3px;
     width: 20px;
   }
-  #hero .hero-wrapper .column2 h1{
-    right: var(--borderWidth);
-  }
-  #nav .nav-separator {
-    padding-top: 0px;
-    color: var(--navBarTextColor);
-  }
 }
+
 @media (min-width: 576px) {
   /* HERO SECTION */
   :root {
@@ -312,10 +243,6 @@ section {
   #hero .hero-wrapper .column2 h1{
     width: unset;
   }
-  #nav .nav-separator {
-    padding-top: 0px;
-    color: var(--navBarTextColor);
-  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -325,10 +252,8 @@ section {
     --largeFontSize: 14rem;
     --signatureFontSize: 12rem;
     --heroSmallFontSize: 6rem;
-  }
-  #nav .nav-separator {
-    padding-top: 0px;
-    color: var(--navBarTextColor);
+    /* SIZES */
+    --borderWidth: 6rem;
   }
 }
 
@@ -343,6 +268,7 @@ section {
     --atomicDesignTitleFontSize: 15rem;
     --atomicDesignIconLabelFontSize: 8rem;
     --hireMeDetailsFontSize: 7rem;
+    --borderWidth: 6rem;
   }
   #nav .nav-separator {
     padding-top: 0px;
@@ -376,9 +302,5 @@ section {
   }
   #nav > a, #footer a {
     padding: 2rem 4rem;
-  }
-  #nav .nav-separator {
-    padding-top: 10px;
-    color: var(--navBarTextColor);
   }
 }

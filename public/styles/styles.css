@@ -42,3 +42,51 @@ a:hover {
 .signature {
   font-family: signature;
 }
+
+#nav img {
+  margin-top: 40px;
+}
+
+#nav, #footer {
+  z-index: 1;
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  height: calc(2 * var(--borderWidth));
+  left: 0px;
+  padding-left: var(--borderWidth);
+  padding-right: var(--borderWidth);
+}
+
+@media only screen and (max-width: 576px) {
+  #nav, #footer {
+    height: calc(3 * var(--borderWidth));
+  }
+}
+
+#nav {
+  top: 0px;
+  padding-top: 3rem;
+  justify-content: space-between;
+}
+#nav .nav-separator {
+  padding-top: 8px;
+  color: var(--navBarTextColor);
+}
+
+#footer {
+  justify-content: right;
+  padding-right: var(--borderWidth);
+  bottom: 0;
+}
+#footer img {
+  width: 24px;
+}
+
+#nav > a, #footer a {
+  padding: 2rem 4rem;
+  text-transform: capitalize;
+  color: var(--navBarTextColor);
+  display: inline-block;
+  font-family: Arvo;
+}

@@ -27,20 +27,22 @@ li{
 .hamburger{
   display: none;
   cursor: pointer;
+  margin-top: 90px;
+  margin-right: 20px;
 }
 .bar{
-  width: 25px;
-  height: 3px;
+  width: 27px;
+  height: 4px;
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background: white;
+  background: var(--lightModeSurfaceBorder);
 }
 .nav-item{
   padding: 0 1.5rem;
 }
 
-@media(max-width: 760px){
+@media(max-width: 767px){
   .bar{
     display: block;
   }

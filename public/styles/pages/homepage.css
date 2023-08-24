@@ -13,7 +13,9 @@ h1,h2,h3 {
   padding-left: var(--borderWidth);
   padding-right: var(--borderWidth);
 }
-
+#nav, #footer {
+  background-color: var(--lightModeSurfaceBorder);
+}
 .left-border, .right-border {
   width:  var(--borderWidth);
   position: fixed;
@@ -26,48 +28,6 @@ h1,h2,h3 {
 }
 .right-border {
   right: 0px;
-}
-
-#nav, #footer {
-  z-index: 1;
-  position: fixed;
-  display: flex;
-  background-color: var(--lightModeSurfaceBorder);
-  width: 100vw;
-  height: calc(2 * var(--borderWidth));
-  left: 0px;
-  padding-left: var(--borderWidth);
-  padding-right: var(--borderWidth);
-}
-
-#nav {
-  top: 0px;
-  padding-top: 3rem;
-  justify-content: space-between;
-}
-#nav .nav-separator {
-  padding-top: 8px;
-  color: var(--navBarTextColor);
-}
-
-#footer {
-  justify-content: right;
-  padding-right: var(--borderWidth);
-  bottom: 0;
-}
-#footer img {
-  width: 24px;
-}
-
-#nav, #footer {
-  background-color: var(--lightModeSurfaceBorder);
-}
-#nav > a, #footer a {
-  padding: 2rem 4rem;
-  text-transform: capitalize;
-  color: var(--navBarTextColor);
-  display: inline-block;
-  font-family: Arvo;
 }
 
 /* All Sections */
@@ -397,19 +357,6 @@ section {
     --signatureFontSize: 7rem;
     --heroSmallFontSize: 3rem;
   }
-
-  #nav {
-    top: 0px;
-    padding-top:2px;
-    justify-content: left;
-  }
-  #nav > a, #footer a {
-    padding: 0rem 4rem;
-  }
-  #nav .nav-separator {
-    padding-top: 0px;
-    color: var(--navBarTextColor);
-  }
   #footer img {
     padding-top: 3px;
     width: 20px;
@@ -508,6 +455,8 @@ section {
     --largeFontSize: 15rem;
     --signatureFontSize: 12rem;
     --heroSmallFontSize: 6.4rem;
+    /* SIZES */
+    --borderWidth: 6rem;
   }
 
   /* DESIGN PROCESS SECTION */
