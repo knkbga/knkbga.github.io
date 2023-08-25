@@ -25,6 +25,8 @@
   <link rel="stylesheet" href="./public/styles/pages/homepage.css">
   <link rel="stylesheet" href="./public/styles/iconStyle.css">
   <link rel="stylesheet" href="./public/styles/header.css">
+  <link rel="stylesheet" href="./public/styles/pages/ProjectSection/project-section.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <title>Kanak Bagga, Technovator</title>
 </head>
 
@@ -200,6 +202,24 @@
         </div>
       </div>
     </section>
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <article>
+        <div class="slider vertical-slider">
+          <div class="slick">
+            <div class="item">
+              Article 1
+            </div>
+            <div class="item">
+              Article 2
+            </div>
+            <div class="item">
+              Article 3
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
     <!-- HIRE ME SECTION -->
     <section id="hire">
       <div class="hire-wrapper">
@@ -258,4 +278,16 @@
   </footer>
 </body>
 <script src="./public/scripts/header.js"></script>
+<script src="./public/scripts/project-section.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript">
+  $('.slick', '.vertical-slider').slick({
+    vertical: true,
+    verticalSwiping: true,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  });
+</script>
 </html>

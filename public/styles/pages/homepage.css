@@ -252,6 +252,12 @@ section {
   width: 100%;
 }
 
+/* PROJECTS */
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
 #hire .hire-wrapper {
   height: calc(100vh - 4 * var(--borderWidth));
   display: grid;
