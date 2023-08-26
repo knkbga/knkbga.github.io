@@ -1,4 +1,7 @@
-sections#projects button {
+section#projects {
+  padding-top: 5vh;
+}
+/* section#projects button {
   display: inline-block;
   padding: 0;
   margin: 0;
@@ -7,21 +10,19 @@ sections#projects button {
   border: none;
   background: none;
   cursor: pointer;
-}
-sections#projects img {
+} */
+section#projects img {
   max-width: 100%;
-}
-sections#projects article {
-  background-color: #c1c1c1;
-  padding: 50px 0;
-  margin: 20px auto;
-  max-width: 999px;
-  width: 100%;
 }
 .slider {
   position: relative;
   width: 100%;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  height: calc(100vh - 4 * var(--borderWidth));
+  max-height: calc(100vh - 2 * var(--borderWidth));
 }
 
 .slick {
@@ -30,8 +31,8 @@ sections#projects article {
 }
 .slick .item {
   float: left;
-  background-color: green;
   text-align: center;
+  padding: 2vh 2vw;
 }
 .slick .item img {
   display: block;
@@ -84,4 +85,67 @@ sections#projects article {
   height: 30px;
   font-size: 0;
   background-size: 100% 100%;
+}
+
+#projects article {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+:root {
+  --padding-left-ul: 10px;
+  --padding-top-li: 10px;
+  --dot-size: 20px;
+  --border-line-width: 4px;
+}
+
+#projects .timeline ul {
+  border-left: var(--border-line-width) solid var(--lightModeSurfaceBorder);
+  padding-left: var(--padding-left-ul);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#projects .timeline ul li {
+  position: relative;
+  padding: var(--padding-top-li) 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 5rem;
+  transition: font-size 0.3s;
+}
+
+#projects .timeline ul li.active {
+  font-size: 8rem;
+}
+
+#projects .timeline ul li .dot{
+  position: absolute;
+  left: calc(-1 * var(--padding-left-ul) - (var(--dot-size)/2) - (var(--border-line-width)/2) );
+  top: calc(var(--padding-top-li) + 5px);
+  width: var(--dot-size);
+  height: var(--dot-size);
+  border-radius: 50%;
+  background-color: var(--lightModeSurfaceBorder);
+}
+
+#projects article .slider.vertical-slider .slick .item {
+  height: calc(100vh - 4 * var(--borderWidth));
+  display: flex;
+  align-items: center;
+}
+#projects article .slider.vertical-slider .slick .item .step-title {
+  position: absolute;
+  width: 100%;
+  top: 2vh;
+  font-size: 20rem;
+  font-family: Gloria Hallelujah;
+}
+#projects article .slider.vertical-slider .slick .item .step-title .caption {
+  display: block;
+  font-size: 8rem;
+  text-decoration: underline;
 }

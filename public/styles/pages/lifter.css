@@ -32,18 +32,6 @@ h1,h2,h3 {
   right: 0px;
 }
 
-/* All Sections */
-section {
-  min-height: calc(100vh -  4 * var(--borderWidth));
-  scroll-snap-align: start;
-}
-.icon-scroll-wrapper {
-  cursor: pointer;
-}
-.separator-wrapper {
-
-}
-
 /* Hero Section */
 #hero .hero-wrapper {
   display: flex;

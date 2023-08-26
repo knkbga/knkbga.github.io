@@ -90,3 +90,12 @@ a:hover {
   display: inline-block;
   font-family: Arvo;
 }
+
+/* All Sections */
+section {
+  min-height: calc(100vh -  4 * var(--borderWidth));
+  scroll-snap-align: start;
+}
+.icon-scroll-wrapper {
+  cursor: pointer;
+}
