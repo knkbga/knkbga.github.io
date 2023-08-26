@@ -89,7 +89,7 @@ section#projects img {
 
 #projects article {
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 25% 75%;
 }
 
 :root {
@@ -134,8 +134,6 @@ section#projects img {
 
 #projects article .slider.vertical-slider .slick .item {
   height: calc(100vh - 4 * var(--borderWidth));
-  display: flex;
-  align-items: center;
 }
 #projects article .slider.vertical-slider .slick .item .step-title {
   position: absolute;
@@ -143,9 +141,24 @@ section#projects img {
   top: 2vh;
   font-size: 20rem;
   font-family: Gloria Hallelujah;
+  display: none;
 }
 #projects article .slider.vertical-slider .slick .item .step-title .caption {
   display: block;
   font-size: 8rem;
   text-decoration: underline;
+}
+
+#projects article .slider.vertical-slider .slick .item .step {  
+  overflow: scroll;
+  height: calc(100vh - 4 * var(--borderWidth));
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+#projects article .slider.vertical-slider .slick .item .step img {
+  padding: 10vh 2vw;
+  object-fit: contain;
+  height: calc(100vh - 4 * var(--borderWidth) - 10vh);
 }

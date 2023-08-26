@@ -20,5 +20,5 @@ $('.slider').on('afterChange', function (event, slick, currentSlide) {
 $('.timeline li[data-slide]').click(function (e) {
   e.preventDefault()
   var slideNumber = $(this).data('slide')
-  // $('.slider').slick('slickGoTo', slideNumber - 1)
+  $('.slider').slick('slickGoTo', slideNumber - 1)
 })
