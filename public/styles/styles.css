@@ -68,6 +68,7 @@ a:hover {
   top: 0px;
   padding-top: 3rem;
   justify-content: space-between;
+  z-index: 2;
 }
 #nav .nav-separator {
   padding-top: 8px;
