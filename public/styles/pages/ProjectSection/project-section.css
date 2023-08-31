@@ -14,16 +14,6 @@ section#projects {
 section#projects img {
   max-width: 100%;
 }
-.slider {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  background-color: #fff;
-  height: calc(100vh - 4 * var(--borderWidth));
-  max-height: calc(100vh - 2 * var(--borderWidth));
-}
 
 .slick {
   position: relative;
@@ -87,11 +77,6 @@ section#projects img {
   background-size: 100% 100%;
 }
 
-#projects article {
-  display: grid;
-  grid-template-columns: 25% 75%;
-}
-
 :root {
   --padding-left-ul: 10px;
   --padding-top-li: 10px;
@@ -102,8 +87,6 @@ section#projects img {
 #projects .timeline ul {
   border-left: var(--border-line-width) solid var(--lightModeSurfaceBorder);
   padding-left: var(--padding-left-ul);
-  padding-top: 40px;
-  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -115,10 +98,9 @@ section#projects img {
   cursor: pointer;
   text-transform: uppercase;
   font-size: 5rem;
-  transition: font-size 0.3s;
 }
 
-#projects .timeline ul li.active {
+#projects .timeline ul li.active .step-title {
   font-size: 8rem;
 }
 
@@ -132,33 +114,49 @@ section#projects img {
   background-color: var(--lightModeSurfaceBorder);
 }
 
-#projects article .slider.vertical-slider .slick .item {
-  height: calc(100vh - 4 * var(--borderWidth));
+
+#projects article .step-title {
+  font-size: 5rem;
+  transition: font-size 0.3s;
 }
-#projects article .slider.vertical-slider .slick .item .step-title {
-  position: absolute;
-  width: 100%;
-  top: 2vh;
-  font-size: 20rem;
-  font-family: Gloria Hallelujah;
-  display: none;
-}
-#projects article .slider.vertical-slider .slick .item .step-title .caption {
-  display: block;
-  font-size: 8rem;
+#projects article .step-title .caption {
+  font-size: 3.5rem;
   text-decoration: underline;
+  color: var(--lightModeSurfaceBorder);
+  background-color: #fff;
+  width: min-content;
 }
 
 #projects article .slider.vertical-slider .slick .item .step {  
-  overflow: scroll;
-  height: calc(100vh - 4 * var(--borderWidth));
   background-color: #fff;
-  display: flex;
-  align-items: center;
 }
 
 #projects article .slider.vertical-slider .slick .item .step img {
-  padding: 10vh 2vw;
+  padding: 5vh 2vw;
   object-fit: contain;
-  height: calc(100vh - 4 * var(--borderWidth) - 10vh);
+  height: calc(100vh - 4 * var(--borderWidth) - 15vh);
+}
+
+#projects article {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  height: calc(100vh - 4 * var(--borderWidth) - 15vh);
+  margin: 7.5vh 0vw;
+}
+
+#projects .slider {
+  position: relative;
+  width: calc(100% - 5vw);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  margin: 0 auto;  
+  box-shadow: 0px 0px 20px -5px var(--lightModeSurfaceBorder);
+  border-radius: 2vw;
+}
+
+.slick-prev, .slick-next {
+  cursor: pointer;
 }
