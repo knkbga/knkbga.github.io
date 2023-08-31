@@ -23,24 +23,6 @@ h1,h2,h3 {
   height: 100vh;
   top: 0px;
 }
-.left-border {
-  left: 0px;
-}
-.right-border {
-  right: 0px;
-}
-
-/* All Sections */
-section {
-  min-height: calc(100vh -  4 * var(--borderWidth));
-  scroll-snap-align: start;
-}
-.icon-scroll-wrapper {
-  cursor: pointer;
-}
-.separator-wrapper {
-
-}
 
 /* Hero Section */
 #hero .hero-wrapper {
@@ -250,6 +232,12 @@ section {
 }
 #atomic-design .atomic-design-wrapper .column3 .level {
   width: 100%;
+}
+
+/* PROJECTS */
+.swiper {
+  width: 600px;
+  height: 300px;
 }
 
 #hire .hire-wrapper {

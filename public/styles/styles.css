@@ -68,6 +68,7 @@ a:hover {
   top: 0px;
   padding-top: 3rem;
   justify-content: space-between;
+  z-index: 2;
 }
 #nav .nav-separator {
   padding-top: 8px;
@@ -89,4 +90,22 @@ a:hover {
   color: var(--navBarTextColor);
   display: inline-block;
   font-family: Arvo;
+}
+
+/* All Sections */
+section {
+  min-height: calc(100vh -  4 * var(--borderWidth));
+  scroll-snap-align: start;
+}
+.icon-scroll-wrapper {
+  cursor: pointer;
+}
+
+.left-border {
+  left: 0px;
+  z-index: 2;
+}
+.right-border {
+  right: 0px;
+  z-index: 2;
 }
