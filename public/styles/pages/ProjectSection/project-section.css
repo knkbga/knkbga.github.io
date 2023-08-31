@@ -1,19 +1,6 @@
 section#projects {
   padding-top: 5vh;
 }
-/* section#projects button {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-  line-height: 1;
-  text-align: center;
-  border: none;
-  background: none;
-  cursor: pointer;
-} */
-section#projects img {
-  max-width: 100%;
-}
 
 .slick {
   position: relative;
@@ -82,6 +69,9 @@ section#projects img {
   --padding-top-li: 10px;
   --dot-size: 20px;
   --border-line-width: 4px;
+  --caption-font-size: 5rem;
+  --step-font-size: 7rem;
+  --step-active-font-size: 8rem;
 }
 
 #projects .timeline ul {
@@ -101,7 +91,7 @@ section#projects img {
 }
 
 #projects .timeline ul li.active .step-title {
-  font-size: 8rem;
+  font-size: var(--step-active-font-size);
 }
 
 #projects .timeline ul li .dot{
@@ -114,13 +104,18 @@ section#projects img {
   background-color: var(--lightModeSurfaceBorder);
 }
 
-
+#projects article {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  height: calc(100vh - 4 * var(--borderWidth) - 15vh);
+  margin: 7.5vh 0vw;
+}
 #projects article .step-title {
-  font-size: 5rem;
+  font-size: var(--step-font-size);
   transition: font-size 0.3s;
 }
 #projects article .step-title .caption {
-  font-size: 3.5rem;
+  font-size: var(--caption-font-size);
   text-decoration: underline;
   color: var(--lightModeSurfaceBorder);
   background-color: #fff;
@@ -135,13 +130,6 @@ section#projects img {
   padding: 5vh 2vw;
   object-fit: contain;
   height: calc(100vh - 4 * var(--borderWidth) - 15vh);
-}
-
-#projects article {
-  display: grid;
-  grid-template-columns: 20% 80%;
-  height: calc(100vh - 4 * var(--borderWidth) - 15vh);
-  margin: 7.5vh 0vw;
 }
 
 #projects .slider {
@@ -159,4 +147,129 @@ section#projects img {
 
 .slick-prev, .slick-next {
   cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  :root {
+    --caption-font-size: 3.2rem;
+    --step-font-size: 4.4rem;
+    --step-active-font-size: 6.5rem;
+  }
+  #projects article {
+    display: grid;
+    grid-template-columns: 100%;
+    height: calc(100vh - 4 * var(--borderWidth) - 15vh);
+    margin: 7.5vh 0vw;
+  }
+  #projects .timeline {
+    position: absolute;
+    z-index: 1;
+    padding-right: 5vw;
+  }
+  #projects article ul {
+    background-image: linear-gradient(to right, #fff , transparent);
+  }
+  #projects article .step-title .caption {
+    background-color: transparent;
+  }
+  .slick-arrow {
+    bottom: 10%;
+    top: unset;
+  }
+}
+
+@media (min-width: 576px) {
+  :root {
+    --caption-font-size: 3.2rem;
+    --step-font-size: 4.4rem;
+    --step-active-font-size: 6.5rem;
+  }
+  #projects article {
+    display: grid;
+    grid-template-columns: 100%;
+    height: calc(100vh - 4 * var(--borderWidth) - 15vh);
+    margin: 7.5vh 0vw;
+  }
+  #projects .timeline {
+    position: absolute;
+    z-index: 1;
+    padding-right: 5vw;
+  }
+  #projects article ul {
+    background-image: linear-gradient(to right, #fff , transparent);
+  }
+  #projects article .step-title .caption {
+    background-color: transparent;
+  }
+  .slick-arrow {
+    bottom: 10%;
+    top: unset;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  :root {
+    --caption-font-size: 3.2rem;
+    --step-font-size: 4.4rem;
+    --step-active-font-size: 6.5rem;
+  }
+  #projects article {
+    display: grid;
+    grid-template-columns: 100%;
+    height: calc(100vh - 4 * var(--borderWidth) - 15vh);
+    margin: 7.5vh 0vw;
+  }
+  #projects .timeline {
+    position: absolute;
+    z-index: 1;
+    padding-right: 5vw;
+  }
+  #projects article ul {
+    background-image: linear-gradient(to right, #fff , transparent);
+  }
+  #projects article .step-title .caption {
+    background-color: transparent;
+  }
+  .slick-arrow {
+    bottom: 10%;
+    top: unset;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  :root {
+    --caption-font-size: 3rem;
+    --step-font-size: 4rem;
+    --step-active-font-size: 7rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  :root {
+    --caption-font-size: 3.5rem;
+    --step-font-size: 5rem;
+    --step-active-font-size: 8rem;
+  }
+  #projects article {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: calc(100vh - 4 * var(--borderWidth) - 15vh);
+    margin: 7.5vh 0vw;
+  }
+  #projects .timeline {
+    position: relative;
+  }
+  #projects article ul {
+    background-image: linear-gradient(to right, #fff , transparent);
+  }
+  #projects article .step-title {
+    width: 200px;
+  }
+  #projects article .step-title .caption {
+    background-color: transparent;
+  }
+  .slick-arrow {
+    bottom: unset;
+    top: 48%;
+  }
 }

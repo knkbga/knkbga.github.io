@@ -23,12 +23,6 @@ h1,h2,h3 {
   height: 100vh;
   top: 0px;
 }
-.left-border {
-  left: 0px;
-}
-.right-border {
-  right: 0px;
-}
 
 /* Hero Section */
 #hero .hero-wrapper {

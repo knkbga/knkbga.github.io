@@ -99,3 +99,12 @@ section {
 .icon-scroll-wrapper {
   cursor: pointer;
 }
+
+.left-border {
+  left: 0px;
+  z-index: 2;
+}
+.right-border {
+  right: 0px;
+  z-index: 2;
+}
