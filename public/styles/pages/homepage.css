@@ -35,7 +35,7 @@ h1,h2,h3 {
 #hero .hero-wrapper .column1,
 #hero .hero-wrapper .column2 {
   height: 100%;
-  height: calc(100vh - 2 * var(--borderWidth));
+  height: calc(100dvh - 2 * var(--borderWidth));
 }
 #hero .hero-wrapper .column1 {
   padding-left: 4dvw;
@@ -65,7 +65,7 @@ h1,h2,h3 {
   align-items: flex-end;
 }
 #hero .hero-wrapper .column2 img {
-  max-height: calc(100vh - 4 * var(--borderWidth));
+  max-height: calc(100dvh - 4 * var(--borderWidth));
 }
 
 #design-process .design-process-wrapper {
@@ -82,7 +82,7 @@ h1,h2,h3 {
 #design-process .design-process-wrapper .column3 {
   display: flex;
   flex-direction: column;
-  max-height: calc(100vh - 4 * var(--borderWidth));
+  max-height: calc(100dvh - 4 * var(--borderWidth));
 }
 #design-process .design-process-wrapper .column1 {
   display: flex;
@@ -163,7 +163,7 @@ h1,h2,h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 4 * var(--borderWidth));
+  height: calc(100dvh - 4 * var(--borderWidth));
   display: grid;
   grid-template-columns: 12.5% 12.5% 40% 12.5% 12.5%;
   column-gap: 2%;
@@ -241,7 +241,7 @@ h1,h2,h3 {
 }
 
 #hire .hire-wrapper {
-  height: calc(100vh - 4 * var(--borderWidth));
+  height: calc(100dvh - 4 * var(--borderWidth));
   display: grid;
   grid-template-columns: 30% 40% 30%;
 }

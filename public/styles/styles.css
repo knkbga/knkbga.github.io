@@ -94,7 +94,7 @@ a:hover {
 
 /* All Sections */
 section {
-  min-height: calc(100vh -  4 * var(--borderWidth));
+  min-height: calc(100dvh -  4 * var(--borderWidth));
   scroll-snap-align: start;
 }
 .icon-scroll-wrapper {

@@ -43,7 +43,7 @@ h1,h2,h3 {
 #hero .hero-wrapper .column1,
 #hero .hero-wrapper .column2 {
   height: 100%;
-  height: calc(100vh - 2 * var(--borderWidth));
+  height: calc(100dvh - 2 * var(--borderWidth));
 }
 #hero .hero-wrapper .signature {
   font-size: var(--signatureFontSize);
@@ -64,7 +64,7 @@ h1,h2,h3 {
   margin-top: 10px;
 }
 #hero .hero-wrapper .column1 img {
-  max-height: calc(100vh - 2 * var(--borderWidth));
+  max-height: calc(100dvh - 2 * var(--borderWidth));
 }
 #hero .hero-wrapper .column2 {
   display: flex;
@@ -74,7 +74,7 @@ h1,h2,h3 {
 }
 
 #hire .hire-wrapper {
-  height: calc(100vh - 4 * var(--borderWidth));
+  height: calc(100dvh - 4 * var(--borderWidth));
   display: grid;
   grid-template-columns: 30% 40% 30%;
 }
