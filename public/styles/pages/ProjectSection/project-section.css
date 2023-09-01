@@ -1,5 +1,5 @@
 section#projects {
-  padding-top: 5vh;
+  padding-top: 5dvh;
 }
 
 .slick {
@@ -9,7 +9,7 @@ section#projects {
 .slick .item {
   float: left;
   text-align: center;
-  padding: 2vh 2vw;
+  padding: 2vh 2dvw;
 }
 .slick .item img {
   display: block;
@@ -108,7 +108,7 @@ section#projects {
   display: grid;
   grid-template-columns: 20% 80%;
   height: calc(100vh - 4 * var(--borderWidth) - 15vh);
-  margin: 7.5vh 0vw;
+  margin: 7.5vh 0dvw;
 }
 #projects article .step-title {
   font-size: var(--step-font-size);
@@ -127,7 +127,7 @@ section#projects {
 }
 
 #projects article .slider.vertical-slider .slick .item .step img {
-  padding: 5vh 2vw;
+  padding: 5vh 2dvw;
   object-fit: contain;
   height: calc(100vh - 4 * var(--borderWidth) - 15vh);
 }
@@ -142,7 +142,7 @@ section#projects {
   background-color: #fff;
   margin: 0 auto;  
   box-shadow: 0px 0px 20px -5px var(--lightModeSurfaceBorder);
-  border-radius: 2vw;
+  border-radius: 2dvw;
 }
 
 .slick-prev, .slick-next {
@@ -159,12 +159,12 @@ section#projects {
     display: grid;
     grid-template-columns: 100%;
     height: calc(100vh - 4 * var(--borderWidth) - 15vh);
-    margin: 7.5vh 0vw;
+    margin: 7.5vh 0dvw;
   }
   #projects .timeline {
     position: absolute;
     z-index: 1;
-    padding-right: 5vw;
+    padding-right: 5dvw;
   }
   #projects article ul {
     background-image: linear-gradient(to right, #fff , transparent);
@@ -188,12 +188,12 @@ section#projects {
     display: grid;
     grid-template-columns: 100%;
     height: calc(100vh - 4 * var(--borderWidth) - 15vh);
-    margin: 7.5vh 0vw;
+    margin: 7.5vh 0dvw;
   }
   #projects .timeline {
     position: absolute;
     z-index: 1;
-    padding-right: 5vw;
+    padding-right: 5dvw;
   }
   #projects article ul {
     background-image: linear-gradient(to right, #fff , transparent);
@@ -217,12 +217,12 @@ section#projects {
     display: grid;
     grid-template-columns: 100%;
     height: calc(100vh - 4 * var(--borderWidth) - 15vh);
-    margin: 7.5vh 0vw;
+    margin: 7.5vh 0dvw;
   }
   #projects .timeline {
     position: absolute;
     z-index: 1;
-    padding-right: 5vw;
+    padding-right: 5dvw;
   }
   #projects article ul {
     background-image: linear-gradient(to right, #fff , transparent);
@@ -254,7 +254,7 @@ section#projects {
     display: grid;
     grid-template-columns: 20% 80%;
     height: calc(100vh - 4 * var(--borderWidth) - 15vh);
-    margin: 7.5vh 0vw;
+    margin: 7.5vh 0dvw;
   }
   #projects .timeline {
     position: relative;

@@ -4,7 +4,7 @@ h1,h2,h3 {
 }
 
 #body {
-  min-height: 100vh;
+  min-height: 100dvh;
   background-image: url('../../images/background.svg');
   background-repeat: repeat;
   font-family: Primary;
@@ -22,7 +22,7 @@ h1,h2,h3 {
   width:  var(--borderWidth);
   position: fixed;
   background-color: var(--darkModeSurfaceBorderColor);
-  height: 100vh;
+  height: 100dvh;
   top: 0px;
 }
 
@@ -55,8 +55,8 @@ h1,h2,h3 {
 #hero .hero-wrapper .big.underlined {
   text-decoration: underline;
   font-size: var(--largeFontSize);
-  padding-left: 1vw;
-  padding-right: 1vw;
+  padding-left: 1dvw;
+  padding-right: 1dvw;
 }
 #hero .hero-wrapper .small {
   font-size: var(--heroSmallFontSize);
@@ -70,7 +70,7 @@ h1,h2,h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 1vw;
+  padding-left: 1dvw;
 }
 
 #hire .hire-wrapper {
@@ -87,18 +87,18 @@ h1,h2,h3 {
 }
 #hire .hire-wrapper .column2 {
   position: relative;
-  margin-top: 10vh;
+  margin-top: 10dvh;
 }
 #hire .hire-wrapper .column2 .hire-text h2 {
   text-transform: uppercase;
   font-size: var(--largeFontSize);
-  margin-bottom: 2vh;
+  margin-bottom: 2dvh;
 }
 #hire .hire-wrapper .column2 .hire-text img {
   position: absolute;
-  top: -3vh;
-  right: -1vw;
-  width: 7vw;
+  top: -3dvh;
+  right: -1dvw;
+  width: 7dvw;
 }
 #hire .hire-wrapper .column2 .social-media-icons {
   
@@ -112,17 +112,17 @@ h1,h2,h3 {
   grid-template-columns: 50% 50%;
 }
 #hire .hire-wrapper .column2 .social-media-icons .row1 img:nth-child(1) {
-  width: 10vw;
-  padding-left: 3vw;
+  width: 10dvw;
+  padding-left: 3dvw;
 }
 #hire .hire-wrapper .column2 .social-media-icons .row1 img:nth-child(2) {
-  width: 9vw;
+  width: 9dvw;
 }
 #hire .hire-wrapper .column2 .social-media-icons .row2 {
-  padding-left: 10vw;
+  padding-left: 10dvw;
 }
 #hire .hire-wrapper .column2 .social-media-icons .row2 img {
-  width: 9vw;
+  width: 9dvw;
 }
 #hire .hire-wrapper .column2 .brackets {
   position: relative;
@@ -131,22 +131,22 @@ h1,h2,h3 {
   position: absolute;
 }
 #hire .hire-wrapper .column2 .brackets img:nth-child(1) {
-  left: -3vw;
-  top: -3vw;
-  height: 25vw;
+  left: -3dvw;
+  top: -3dvw;
+  height: 25dvw;
 }
 #hire .hire-wrapper .column2 .brackets img:nth-child(2) {
-  right: 0vw;
-  top: -3vw;
-  height: 25vw;
+  right: 0dvw;
+  top: -3dvw;
+  height: 25dvw;
 }
 #hire .hire-wrapper .column3 {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: end;
-  padding-bottom: 4vh;
-  padding-right: 1vw;
+  padding-bottom: 4dvh;
+  padding-right: 1dvw;
 }
 #hire .hire-wrapper .column3 h3 {
   font-family: Arvo;
@@ -160,9 +160,9 @@ h1,h2,h3 {
 }
 #hire .hire-wrapper .column3 .resume .oval {
   position: absolute;
-  width: 10vw;
-  right: -1vw;
-  bottom: -1vw;
+  width: 10dvw;
+  right: -1dvw;
+  bottom: -1dvw;
 }
 
 /*
