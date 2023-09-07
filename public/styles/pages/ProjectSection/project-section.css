@@ -147,6 +147,7 @@ section#projects {
 
 .slick-prev, .slick-next {
   cursor: pointer;
+  border: 0;
 }
 
 @media (max-width: 576px) {
