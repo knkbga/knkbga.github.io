@@ -14,8 +14,8 @@ $(document).ready(function () {
     autoplaySpeed: 2000,
     pauseOnHover: false,
     draggable: false,
-    prevArrow: "<img class='a-left control-c prev slick-prev' width='10px' >",
-    nextArrow: "<img class='a-right control-c next slick-next' width='10px' >"
+    prevArrow: "<img class='a-left control-c prev slick-prev' width='10px' src='./public/images/left-carousel-arrow.svg'>",
+    nextArrow: "<img class='a-right control-c next slick-next' width='10px' src='./public/images/right-carousel-arrow.svg'>"
   })
 
   $('.slider').on('beforeChange', function (event, slick, currentSlide) {
