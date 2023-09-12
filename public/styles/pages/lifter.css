@@ -63,9 +63,6 @@ h1,h2,h3 {
   display: inline-block;
   margin-top: 10px;
 }
-#hero .hero-wrapper .column1 img {
-  max-height: calc(100dvh - 2 * var(--borderWidth));
-}
 #hero .hero-wrapper .column2 {
   display: flex;
   align-items: center;
@@ -228,6 +225,9 @@ h1,h2,h3 {
 }
 
 @media only screen and (min-width: 768px) {
+  #hero .hero-wrapper .column1 img {
+    max-height: calc(100dvh - 2 * var(--borderWidth));
+  }
   /* HERO SECTION */
   :root {
     /* TEXTS */
@@ -240,6 +240,9 @@ h1,h2,h3 {
 }
 
 @media only screen and (min-width: 992px) {
+  #hero .hero-wrapper .column1 img {
+    height: calc(100dvh - 2 * var(--borderWidth));
+  }
   /* HERO SECTION */
   :root {
     /* TEXTS */
@@ -259,6 +262,9 @@ h1,h2,h3 {
 }
 
 @media only screen and (min-width: 1200px) {
+  #hero .hero-wrapper .column1 img {
+    height: calc(100dvh - 2 * var(--borderWidth));
+  }
   :root {
     --borderWidth: 6rem;
     --heroSectionImage: 413px;
