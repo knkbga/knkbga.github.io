@@ -3,6 +3,7 @@
   --heroSectionImage: 413px;
   /* COLORS */
   --lightModeSurfaceBorder: #EA6826;
+  --lightModeSurfaceBorder2: #18CC39;
   --navBarTextColor: #fff;
   --backgroundColorForTexts: #fff;
   --darkModeSurfaceBorderColor: #292929;
@@ -80,7 +81,7 @@ a:hover {
   padding-right: var(--borderWidth);
   bottom: 0;
 }
-#footer img {
+#footer img { 
   width: 24px;
 }
 

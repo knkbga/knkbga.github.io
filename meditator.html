@@ -22,11 +22,13 @@
   <link rel="stylesheet" href="./public/styles/normalize.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/superkube@latest/dist/superkube.min.css">
   <link rel="stylesheet" href="./public/styles/styles.css">
-  <link rel="stylesheet" href="./public/styles/pages/lifter.css">
+  <link rel="stylesheet" href="./public/styles/pages/meditator.css">
   <link rel="stylesheet" href="./public/styles/iconStyle.css">
   <link rel="stylesheet" href="./public/styles/header.css">
-  <title>Kanak Bagga, Lifter</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <title>Kanak Bagga, Meditator</title>
 </head>
+
 <body id="body">
   <header class="myHeader">
     <nav id="nav" class="navbar">
@@ -63,23 +65,21 @@
     <!-- HERO SECTION -->
     <section id="hero">
       <div class="hero-wrapper">
-        <div class="column1">
-          <img src="./public/images/hero-image-dark-mode.png" alt="">
-        </div>
-        <div class="column2">
-          <h1>
-            <div><span class="small">before</span><span class="big underlined">physical</span><span class="small">strength</span>
-            </div>
-            <div><span class="small">comes</span><span class="big underlined">mental</span><span class="small">strength</span>
-            </div>
-            <div style="padding-top: 3dvh;"><span class="signature">~knkbga</span></div>
-          </h1>
-        </div>
+        <h1>
+          <div align="right"><span class="big underlined">silence</span><span class="small"
+              style="padding-left: 1.6dvw;">your mind</span></div>
+          <div align="right">
+            <span class="small">before you</span>
+            <span style="padding-left: 1.6dvw;" class="big underlined">decide</span>
+          </div>
+          <div align="right"><span class="signature">~ knkbga</span></div>
+        </h1>
+        <img src="./public/images/meditator/yoga_pose.png" alt="">
       </div>
     </section>
     <div class="separator-wrapper">
       <div class="icon-scroll-wrapper">
-        <a href="#hire" onclick="scrollToSectionID('hire')">
+        <a href="#design-process" onclick="scrollToSectionID('hire')">
           <div class='icon-scroll'></div>
         </a>
       </div>
@@ -95,12 +95,12 @@
             <h2>
               hire me?
             </h2>
-            <img src="./public/images/exclamation-dark-mode.png" alt="">
+            <img src="./public/images/exclamation-light-mode.png" alt="">
           </div>
           <div>
             <div class="brackets">
-              <img src="./public/images/social-media/square-bracket-left-dark-mode.svg" alt="">
-              <img src="./public/images/social-media/square-bracket-right-dark-mode.svg" alt="">
+              <img src="./public/images/social-media/square-bracket-left.svg" alt="">
+              <img src="./public/images/social-media/square-bracket-right.svg" alt="">
             </div>
             <div class="social-media-icons">
               <div class="row1">
@@ -141,5 +141,10 @@
     </div>
   </footer>
 </body>
-<script src="./public/scripts/header.js"></script>
+<script type="text/javascript" src="./public/scripts/header.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="./public/scripts/project-section.js"></script>
+
 </html>
